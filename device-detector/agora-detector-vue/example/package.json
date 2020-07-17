@@ -1,0 +1,44 @@
+{
+  "name": "example1",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "core-js": "file:../node_modules/core-js",
+    "vue": "file:../node_modules/vue",
+    "agora-rtc-sdk-ng": "file:../node_modules/agora-rtc-sdk-ng",
+    "agora-detector-vue": "file:.."
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "file:../node_modules/@vue/cli-plugin-babel",
+    "@vue/cli-plugin-eslint": "file:../node_modules/@vue/cli-plugin-eslint",
+    "@vue/cli-service": "file:../node_modules/@vue/cli-service",
+    "babel-eslint": "^10.1.0",
+    "eslint": "file:../node_modules/eslint",
+    "eslint-plugin-vue": "file:../node_modules/eslint-plugin-vue",
+    "vue-template-compiler": "file:../node_modules/vue-template-compiler"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
