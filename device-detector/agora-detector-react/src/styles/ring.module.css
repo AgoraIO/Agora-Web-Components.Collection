@@ -1,0 +1,26 @@
+.detector-ring {
+  position: relative;
+  box-sizing: border-box;
+  width: 14px;
+  height: 14px;
+  border: 2px solid #099DFD;
+  display: inline-block;
+  border-radius: 50%;
+  animation: ring 1s linear infinite;
+  margin-right: 4px;
+}
+.ring-inner {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  left: -2px;
+  background-color: white;
+}
+@keyframes ring {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

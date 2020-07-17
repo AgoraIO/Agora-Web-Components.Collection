@@ -1,0 +1,63 @@
+{
+  "name": "agora-detector-vue",
+  "version": "1.0.2",
+  "description": "agora device detector for vue",
+  "author": "",
+  "license": "MIT",
+  "repository": "/agora-detector-vue",
+  "main": "dist/vueAgoraDetector.umd.js",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build --target lib --name vueAgoraDetector src/main.ts",
+    "test:unit": "vue-cli-service test:unit",
+    "lint": "vue-cli-service lint",
+    "example": "vue-cli-service serve localExample/main.js",
+    "build:example": "vue-cli-service build localExample/main.js"
+  },
+  "dependencies": {
+    "vue-class-component": "^7.2.3",
+    "vue-property-decorator": "^8.4.2"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.11",
+    "@types/mocha": "^5.2.4",
+    "@typescript-eslint/eslint-plugin": "^2.33.0",
+    "@typescript-eslint/parser": "^2.33.0",
+    "@vue/cli-plugin-babel": "^4.4.0",
+    "@vue/cli-plugin-eslint": "^4.4.0",
+    "@vue/cli-plugin-typescript": "^4.4.0",
+    "@vue/cli-plugin-unit-mocha": "^4.4.0",
+    "@vue/cli-service": "^4.4.0",
+    "@vue/eslint-config-airbnb": "^5.0.2",
+    "@vue/eslint-config-typescript": "^5.0.2",
+    "@vue/test-utils": "^1.0.3",
+    "agora-rtc-sdk-ng": "^4.0.0",
+    "chai": "^4.1.2",
+    "core-js": "^3.6.5",
+    "eslint": "^6.7.2",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-vue": "^6.2.2",
+    "lint-staged": "^9.5.0",
+    "typescript": "~3.9.3",
+    "vconsole": "^3.3.4",
+    "vue": "^2.6.11",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "peerDependencies": {
+    "core-js": ">=3.6.0",
+    "vue": ">=2.6.0",
+    "agora-rtc-sdk-ng": "^4.0.0"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,jsx,vue,ts,tsx}": [
+      "vue-cli-service lint",
+      "git add"
+    ]
+  },
+  "files": [
+    "dist"
+  ]
+}

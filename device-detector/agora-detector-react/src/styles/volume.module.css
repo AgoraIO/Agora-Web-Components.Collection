@@ -1,0 +1,15 @@
+.volume-block {
+  width: 3px;
+  height: 18px;
+  margin-left: 3px;
+  background-color: #CCCCCC;
+}
+.volume-block.volume-active {
+  background-color: #44A2FC;
+}
+.detector-volume {
+  margin: 0 auto;
+  margin-top: 30px;
+  display: flex;
+  width: fit-content;
+}

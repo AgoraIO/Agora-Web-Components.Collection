@@ -1,0 +1,21 @@
+
+.detector-arrow {
+  margin-left: 2px;
+}
+
+.arrow-inner {
+  width: 0;
+  height: 0;
+  border: 12px solid;
+  border-color: transparent transparent transparent #C3C9D1;
+  position: relative;
+}
+
+.arrow-inner::after {
+  content: '';
+  position: absolute;
+  top: -12px;
+  left: -14px;
+  border: 12px solid;
+  border-color: transparent transparent transparent white;
+}
